@@ -1,0 +1,19 @@
+select count(Position) from HRDataset_v14 where Position=="Production Technician I";
+select count(GenderID) from HRDataset_v14 where GenderID=="1";
+SELECT Employee_Name FROM HRDataset_v14 WHERE ManagerName=="Michael Albert";
+select Employee_Name from HRDataset_v14 where EmploymentStatus=="Active";
+select Employee_Name from HRDataset_v14 where EmploymentStatus=="Active" AND MaritalDesc=="Married";
+select Employee_Name from HRDataset_v14 where EmploymentStatus=="Active" AND Salary<"60000";
+select Employee_Name from HRDataset_v14 where Position=="Production Technician II" AND EngagementSurvey=="5";
+SELECT max(Salary) from HRDataset_v14;
+select Position from HRDataset_v14 where salary>=250000;
+select avg(salary) from HRDataset_v14;
+select Employee_Name from HRDataset_v14 where Salary<=69020.6848874598;
+select Employee_Name from HRDataset_v14 where EmpSatisfaction<=3 and Salary<=69020.6848874598;
+select count(Employee_Name) from HRDataset_v14 where PerfScoreID>3;
+select count(Employee_Name) from HRDataset_v14 where EmpStatusID=="5";
+select count(Employee_Name) from HRDataset_v14 where Department=="IT/IS";
+SELECT Department ,count(Department) from HRDataset_v14 group by Department;
+select EmpID from HRDataset_v14 order by PerfScoreID  ASC;
+select Employee_Name ,Position , max(Salary) , RecruitmentSource from HRDataset_v14;
+
